@@ -2,36 +2,36 @@ let noButtonClickCount = 0; // Contador para el botón "No"
 let noButtonState = 0; // Estado actual del botón "No"
 
 // Función para actualizar el collage de imágenes
-function updateCollage() {
-    const images = [
-        'collageImg1', 'collageImg2', 'collageImg3', 'collageImg4',
-        'collageImg5', 'collageImg7'
-    ];
-    const sources = [
-        'img1.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg',
-        'img5.jpeg', 'img7.jpeg'
-    ];
-    // Barajar las fuentes
-    const shuffledSources = sources.sort(() => Math.random() - 0.5);
+// function updateCollage() {
+//     const images = [
+//         'collageImg1', 'collageImg2', 'collageImg3', 'collageImg4',
+//         'collageImg5', 'collageImg7'
+//     ];
+//     const sources = [
+//         'img1.jpeg', 'img2.jpeg', 'img3.jpeg', 'img4.jpeg',
+//         'img5.jpeg', 'img7.jpeg'
+//     ];
+//     // Barajar las fuentes
+//     const shuffledSources = sources.sort(() => Math.random() - 0.5);
     
-    // Posiciones fijas alrededor de la pantalla
-    const positions = [
-        {top: '5%', left: '5%'},
-        {top: '5%', left: '80%'},
-        {top: '45%', left: '2%'},
-        {top: '45%', left: '88%'},
-        {top: '85%', left: '5%'},
-        {top: '85%', left: '80%'},
-    ];
+//     // Posiciones fijas alrededor de la pantalla
+//     const positions = [
+//         {top: '5%', left: '5%'},
+//         {top: '5%', left: '80%'},
+//         {top: '45%', left: '2%'},
+//         {top: '45%', left: '88%'},
+//         {top: '85%', left: '5%'},
+//         {top: '85%', left: '80%'},
+//     ];
     
-    images.forEach((id, index) => {
-        const img = document.getElementById(id);
-        img.src = shuffledSources[index];
-        img.style.display = 'block';
-        img.style.top = positions[index].top;
-        img.style.left = positions[index].left;
-    });
-}
+//     images.forEach((id, index) => {
+//         const img = document.getElementById(id);
+//         img.src = shuffledSources[index];
+//         img.style.display = 'block';
+//         img.style.top = positions[index].top;
+//         img.style.left = positions[index].left;
+//     });
+// }
 
 // Mostrar el gif inicial
 document.getElementById('gifContainer').style.display = 'block';
@@ -57,7 +57,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
     document.getElementById('messageContainer2').innerHTML = 'Mi valentin por siempre y para siempre!!!!!';
 
     // Actualizar collage
-    updateCollage();
+    // updateCollage();
 
     // Mostrar otro gif después de 4 segundos
     setTimeout(function() {
@@ -99,7 +99,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
         
             noButtonClickCount++;
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
 
         case 1:
@@ -115,7 +115,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '30px 50px';
         
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
 
         case 2:
@@ -131,7 +131,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '40px 60px';
         
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         
         case 3:
@@ -144,7 +144,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '50px 70px';
         
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         case 4:
            
@@ -156,7 +156,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '60px 80px';
          
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         case 5:
            
@@ -168,7 +168,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '70px 90px';
 
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         case 6:
            
@@ -180,7 +180,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '80px 100px';
             
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         case 7:
            
@@ -192,7 +192,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '90px 120px';
   
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         case 8:
            
@@ -203,7 +203,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '100px 140px';
        
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
 
         case 9:
@@ -216,7 +216,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '110px 160px';
           
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
 
         case 10:
@@ -229,7 +229,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '120px 180px';
     
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         case 11:
            
@@ -240,7 +240,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '130px 200px';
             
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         
         case 12:
@@ -253,7 +253,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '140px 220px';
     
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         
         case 13:
@@ -265,7 +265,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '150px 240px';
          
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         
         case 14:
@@ -278,7 +278,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '160px 260px';
             
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         
         case 15:
@@ -291,7 +291,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             document.getElementById('siBtn').style.padding = '170px 280px';
           
             noButtonState++;
-            updateCollage();
+            // updateCollage();
             break;
         
      
@@ -305,7 +305,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
                 document.getElementById('gifContainer').style.display = 'block';
                 document.getElementById('happyGifContainer').style.display = 'none';
 
-                updateCollage();
+                // updateCollage();
                 break;
         
 
